@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Cash cash = cashList.get(position);
-                        LitePal.deleteAll(Cash.class,"income == ?",cash.getIncome());
+                        cash.delete();
                         cashList.remove(position);
                         ininRecycleView(cashList);
                     }
