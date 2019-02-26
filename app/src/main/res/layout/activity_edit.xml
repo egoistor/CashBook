@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.EditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bule">
+
+        <include layout="@layout/title_edit"/>
+
+        <LinearLayout style="@style/common_horizontal_division_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/bule">
+
+            <TextView
+                android:layout_width="240sp"
+                android:layout_height="wrap_content"
+                android:text="支出or收入"
+                android:textSize="36sp"
+                android:background="@color/bule"
+                android:textColor="@color/pink"/>
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/button_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:arrowTint="@color/bule"
+                app:dropDownListPaddingBottom="60dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/common_horizontal_division_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/bule">
+
+            <TextView
+                android:layout_width="240sp"
+                android:layout_height="wrap_content"
+                android:text="请选择类型"
+                android:textSize="36sp"
+                android:background="@color/bule"
+                android:textColor="@color/pink"/>
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/button_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:arrowTint="@color/bule"
+                android:textColor="@color/bule"
+                app:dropDownListPaddingBottom="60dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/common_horizontal_division_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/bule">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="请输入金额"
+                android:textSize="36sp"
+                android:background="@color/bule"
+                android:textColor="@color/pink"/>
+
+            <EditText
+                android:id="@+id/money_count"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bule"
+                android:textColor="@color/pink"
+                android:hint="（元）"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/common_horizontal_division_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/bule">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="备忘录："
+                android:textSize="36sp"
+                android:background="@color/bule"
+                android:textColor="@color/pink"/>
+
+            <EditText
+                android:id="@+id/note_about"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bule"
+                android:textColor="@color/pink"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
